@@ -1,0 +1,41 @@
+services:
+
+  accounts:
+    image: "giovanieugenio/accounts:v2"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700mb
+    networks:
+      - giobank
+
+  loans:
+    image: "giovanieugenio/loans:v2"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700mb
+    networks:
+      - giobank
+
+  cards:
+    image: "giovanieugenio/cards:v2"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700mb
+    networks:
+      - giobank
+
+networks:
+  giobank:
+    driver: "bridge"
