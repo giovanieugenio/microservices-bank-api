@@ -1,0 +1,11 @@
+build:
+  version: "1.0"
+
+cards:
+  message: "Welcome to GioBank accounts related production APIs"
+  contactDetails:
+    name: "Carlos - Product Owner"
+    email: "carlos-po@giobank.com"
+  onCallSupport:
+    - (12)441231023
+    - (12)778564123
