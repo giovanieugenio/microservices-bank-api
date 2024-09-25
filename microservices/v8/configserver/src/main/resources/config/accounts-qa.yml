@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to GioBank accounts related QAs APIs"
+  contactDetails:
+    name: "Marcela - QA Lead"
+    email: "marcela-qa@giobank.com"
+  onCallSupport:
+    - (44)996452120
+    - (44)102347953
